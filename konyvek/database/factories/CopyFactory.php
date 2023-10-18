@@ -20,8 +20,8 @@ class CopyFactory extends Factory
     {
         return [
             
-            'user_id' => User::random()->id, 
-            'book_id' => Book::random()->book_id,
+            'user_id' => User::all()->random()->id, //rand(1,13)
+            'book_id' => Book::all()->random()->book_id,//rand(1,13)
         ];
     }
 }
